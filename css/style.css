@@ -1,0 +1,6 @@
+div, a, button {color: aqua; font-weight: bold;}
+p {color: blueviolet; font-size: 2em;}
+#description {color: darkcyan;}
+.title {color: darkorange;}
+body {font-style: italic; font-family: 'Times New Roman', Times, serif;}
+#sub-desc {color: deeppink;}
