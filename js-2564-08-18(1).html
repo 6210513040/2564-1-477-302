@@ -8,7 +8,7 @@
             font-size: 25pt;         
             font-style: normal; 
             font-weight: bold; 
-            color:SlateBlue;
+            color:rgb(137, 204, 243);
             text-align: center; 
             text-decoration: underline
         }
@@ -19,12 +19,12 @@
             font-style: normal;
             font-weight: bold;
             text-align: center;
-            background-color: SlateBlue; 
+            background-color: rgb(22, 9, 105); 
             border-collapse: collapse; 
-            border: 2px solid navy
+            border: 2px solid rgb(40, 40, 163)
         }
         table.inner{
-            border: 0px
+            border: 2px
         }
     </style>
 
@@ -254,7 +254,7 @@
                 alert("Please enter first name");
                 fname.focus();
             } else if (fname.length > 30) {
-                alert ("First name not more than 30 characters!");
+                alert ("First name not more than 30 characters");
                 fname.focus();
             }
             //last name
@@ -263,7 +263,7 @@
                 alert("Please enter last name");
                 fname.focus();
             }  else if (lname.length > 30) {
-                alert ("Last name not more than 30 characters!");
+                alert ("Last name not more than 30 characters");
                 fname.focus();
             }
         }
