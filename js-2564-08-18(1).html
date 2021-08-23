@@ -243,7 +243,7 @@
                 </td>
             </tr>
         </table>
-    </form>
+    
 
     <script>
         function validate_all() {
@@ -261,6 +261,9 @@
             var lname = document.getElementById("Last_Name");
             if (lname.value == "") {
                 alert("Please enter last name");
+                fname.focus();
+            }  else if (lname.length > 30) {
+                alert ("Last name not more than 30 characters");
                 fname.focus();
             }
         }
