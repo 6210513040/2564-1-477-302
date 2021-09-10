@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+button {
+    background-color: #00b894;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+}
+dialog {
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 3px 7px black;    
+}
+
+    </style>
+</head>
+<body>
+    <div>  
+        <dialog id="myFirstDialog" style="width:50%;background-color:rgba(255, 255, 255, 0.4);border:1px dotted black;">  
+            <p><q>I am so clever that sometimes I don't understand a single word of what I am saying.</q> - <cite>5scar Wilde</cite></p>  
+            <button id="hide">Close</button>  
+        </dialog>  
+        <!-- "Show" button -->
+        <button id="show">Show Dialog</button>  
+    </div>  
+    <!-- JavaScript to provide the "Show/Close" functionality -->
+    <script>
+        (function() {    
+            var dialog = document.getElementById('myFirstDialog');   
+            document.getElementById('show').onclick = function() {    
+                dialog.show();    
+            };    
+            document.getElementById('hide').onclick = function() {    
+                dialog.close();    
+            };    
+        })();   
+    </script>  
+</body>
+</html>
